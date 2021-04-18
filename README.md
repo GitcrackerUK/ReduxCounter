@@ -9,7 +9,7 @@ List of steps to get redux working.
     export default connect()(Component to connect and export )
     ```
 
--   add method
+-   add method to get data from store and pass into component
     `const mapStateToProps = (state) => ({});`
     and add it to connect.
 
