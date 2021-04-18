@@ -3,7 +3,9 @@
 
 const initialState = {};
 
-
 export default function reducer(state = initialState, actions) {
-    return { counter: 42 };
+    return {
+        ...state,
+        counter: 42,
+    };
 }

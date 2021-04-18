@@ -5,11 +5,12 @@ import React, {
 
 import { connect } from 'react-redux';
 
+
+
 class Counter extends Component {
     constructor(props) {
         super(props);
         this.increment = this.increment.bind(this);
-
         this.decrement = this.decrement.bind(this);
     }
     increment = () => {
@@ -32,8 +33,12 @@ class Counter extends Component {
         );
     }
 }
+
+
+
 const mapStateToProps = (state) => ({
-    counter: state.counter, // key is passing  data to the props and value is getting value from a redux store
+    // key is passing  data to the props and value is getting value from a redux store
+    counter: state.counter,
 });
 
-export default connect(mapStateToProps)(Counter);
+export default connect(mapStateToProps)(Counter);     //connects component to state
