@@ -18,7 +18,7 @@ import rootReducer from './reducers/index';
 
 export const store = createStore(rootReducer);
 ```
-- create folder ```reducers``` and inside reducers folder create ```index.js```
+- create folder ```reducers``` and inside reducers folder, create  file ```index.js```
 - inside ```reducers/index.js``` create ``` const initialState``` and function `reducer` Pass as parameter `initialState` default value of `store`
 ```
 const initialState = {};
@@ -47,6 +47,6 @@ Use spread operator to get previous state like so `...state`
 ```
 const mapStateToProps = (state)=>({
     counter:state.storeCounter,
-    someData:storeSomeData
+    someData:state.storeSomeData
 })
 ```
