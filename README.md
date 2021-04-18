@@ -3,7 +3,7 @@
 List of steps to get redux working.
 
 -   install redux and react-redux
--   import 'connect' from react-redux and add to export like so\
+-   import 'connect' from react-redux and add to export like so
 
     ```
     export default connect()(Component to connect and export )
@@ -17,3 +17,11 @@ List of steps to get redux working.
     const mapStateToProps = (state) => ({});
     export default connect(mapStateToProps)(Component)
     ```
+
+-   populate mapStateToProps with data from store
+-   create file 'store' in components folder
+-   in store file import `createStore` and create store
+
+```
+const store = createStore()
+```
